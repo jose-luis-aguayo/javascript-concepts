@@ -64,4 +64,4 @@ const decrypt = (encrypted) => {
 let text = OpenFile('./find.js')
 
 
-console.log(`this is the text ${text}`)
+console.log(`this is the Text ${text}`)
