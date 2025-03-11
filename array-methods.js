@@ -36,7 +36,7 @@
 
     reduceRight()
     reverse()
-    slice()
+    slice()œ
     some()
     sort()
     splice()
