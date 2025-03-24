@@ -29,13 +29,15 @@ console.log(a)
 
 }
 
+let arr = ['{', '{', '[', '[', '(', '(', ')', ')', ']', ']', '}', '}' ];
 
 
+let mid = (arr.length / 2) - 1;
 
-let a = [1,2, 3];
-let b = [4, 5, 6];
+let lastIndex = arr.length - 1;
 
-let result = [a, b].flat();
+for(let i = 0; i <= mid; i ++){
+    console.log(arr[i], arr[lastIndex])
+    lastIndex --;
+}
 
-
-console.log(result.sort((a, b) => a - b));
