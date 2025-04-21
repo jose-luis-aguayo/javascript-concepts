@@ -1,10 +1,23 @@
-let a = [5,3,7,6,8,4,9]
-let smallest = -1;
-let pivot = a[3]; // 6
+function quickSort(arr) {
+    if (arr.length <= 1) {
+      return arr;
+    }
+  
+    let pivot = arr[0];
+    let leftArr = [];
+    let rightArr = [];
+  
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] < pivot) {
+        leftArr.push(arr[i]);
+      } else {
+        rightArr.push(arr[i]);
+      }
+    }
+  
+    return [...quickSort(leftArr), pivot, ...quickSort(rightArr)];
+  }
 
+  let a = [2,3,6,5,1,7,9,8];
 
-for(let i = 0; i < a.length; i ++){
-    if(a[i] < pivot){
-        smallest = a[i]
-    } 
-}
+  console.log(quickSort(a))

@@ -24,8 +24,20 @@ class SinglyLinkedList{
            this.tail = newNode 
          }
          this.length++
-         return this
+         //return this ?? not necessary
        }
+
+    printList(){
+        let current = this.head;
+        let result = '';
+
+        while(current){
+            result += current.val + '->';
+            current = current.next;
+        }
+
+        console.log(result)
+    }
 }
 
 
@@ -36,3 +48,5 @@ myList.push(2);
 myList.push(3);
 myList.push(4);
 console.log(myList)
+
+//number of times: 1, 2, 3, 4, 5
