@@ -24,4 +24,4 @@ const result = binarySearch(arr, target);
 console.log(result); 
 
 
-//number of times repeated: 1, 2, 3, 4, 5
+//number of times repeated: 1, 2, 3, 4, 5, 6, 7, 8
